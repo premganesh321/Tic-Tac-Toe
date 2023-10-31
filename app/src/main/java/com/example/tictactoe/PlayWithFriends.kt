@@ -46,7 +46,7 @@ class PlayWithFriends : ComponentActivity() {
         Winner()
     }
 
-    private fun Winner(){
+    private fun Winner() {
         CheckWinner(bi.btn1 , bi.btn2 , bi.btn3 , bi.txtwinner , bi.txtUpdateData)
         CheckWinner(bi.btn4 , bi.btn5 , bi.btn6 , bi.txtwinner , bi.txtUpdateData)
         CheckWinner(bi.btn7 , bi.btn8 , bi.btn9 , bi.txtwinner , bi.txtUpdateData)
@@ -79,7 +79,7 @@ class PlayWithFriends : ComponentActivity() {
 
             restart()
         }
-        else if(c==9){
+        else if(c==9 && x==y && y==z && !x.isEmpty() ){
             restart()
             txt.text = "Let's restart the Game "
             drawg+=1

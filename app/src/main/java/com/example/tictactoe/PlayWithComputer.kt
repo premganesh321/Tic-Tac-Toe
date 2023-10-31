@@ -98,7 +98,7 @@ class PlayWithComputer : AppCompatActivity() {
             }
             restartHCGame()
         }
-        else if(n==0){
+        else if(n==0 && x==y && y==z && !x.isEmpty() ){
             restartHCGame()
             txt.text = "Let's restart the Game "
             drawHC+=1
